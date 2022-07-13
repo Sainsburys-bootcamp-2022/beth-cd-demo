@@ -25,8 +25,8 @@ jobs:
       - name: Run tests
         run: npm run test
         working-directory: ./beth-site
-      - name: Terraofrm init
-        working-dirctory: ./terraform
+      - name: Terraform init
+        working-directory: ./terraform
         run: make init
       - name: Terraform plan
         working-directory: ./terraform
