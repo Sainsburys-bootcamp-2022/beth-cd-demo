@@ -18,13 +18,13 @@ jobs:
         uses: actions/checkout@v2
       - name: Clean install dependencies
         run: npm ci
-        working-directory: ./site
+        working-directory: ./beth-site
       - name: Build react app
         run: npm run build
-        working-directory: ./site
+        working-directory: ./beth-site
       - name: Run tests
         run: npm run test
-        working-directory: ./site
+        working-directory: ./beth-site
       - name: Terraofrm init
         working-dirctory: ./terraform
         run: make init
